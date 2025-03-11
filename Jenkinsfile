@@ -17,7 +17,7 @@ pipeline{
         }
         stage('génération de rapport'){
             steps{
-                sh 'npx playwright show-report'
+                //sh 'npx playwright show-report'
                 sh 'npx playwright test --reporter=html'
             }
         }
