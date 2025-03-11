@@ -10,7 +10,7 @@ test.beforeEach(async ({ page }) => {
     await loginPage.clicLogin()
 });
 
-test.only('test de déconnexion', async ({page}) => {
+test('test de déconnexion', async ({page}) => {
     const logoutPage = new LogoutPage(page)
     await logoutPage.clicMenu()
     await logoutPage.clicLogout()
